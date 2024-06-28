@@ -3,64 +3,62 @@
 import Intro from "./components/intro.mdx" // introduction or about me
 
 const siteData: any = {
-    author: "yuanli",  // author name
+    author: "Gabriel Dos Santos Souto",  // author name
     logo: {
         // how to change the favicon of the website?
         // change the app/favicon.ico file directly，or refer to the document below
         // https://nextjs.org/docs/app/api-reference/file-conventions/metadata/app-icons
 
         // you can use image or text as the logo, you can choose both, but the image will be displayed first
-        image: "/logo.png", //  the file path of the logo in the public directory
-        text: "NextBlog", // null || text
+        image: "/logoIcon.png", //  the file path of the logo in the public directory
+        text: "Gabriel Souto Dev", // null || text
 
         // whether the logo is a link to the home page
         isHomeLink: true, // true | false
     },
 
     // website title
-    title: "NextBlog",
+    title: "Gabriel Souto Portfólio",
 
     // website description
-    description: "A minimalist blog created with Next.js ,Shadcn-ui and Tailwind.css",
+    description: "a",
 
     // light | dark
     theme: "light",
 
     // your blog repo || your github repo || null
-    githubRepo: "https://github.com/imyuanli/next-blog",
+    githubRepo: "https://github.com/gabesouto",
 
     // routes
     routes: [
+        // {
+        //     name: 'Blog',
+        //     value: '/blog'
+        // },
         {
-            name: 'Blog',
-            value: '/blog'
-        },
+            name: "Currículo",
+            value:
+              "https://drive.google.com/file/d/16KdkrB3akIBXO9YBxZXRv1RouG2-t3cQ/view?usp=drive_link",
+          },
         {
-            name: 'Tags',
-            value: '/tags'
-        },
-        {
-            name: 'Projects',
+            name: 'Projetos',
             value: '/project'
         },
     ],
 
     // home page config
     home: {
-        title: "Welcome to NextBlog",
-        description: "A minimalist blog created with Next.js ,Shadcn-ui and Tailwind.css",
+        title: "Portfólio",
+        description: "Meu nome é Gabriel Dos Santos Souto, sou um desenvolvedor fullstack e acadêmico de Análise e Desenvolvimento de Sistemas, seja bem vindo(a) ao meu blog pessoal, aqui você encontrará todas as informações relacionadas a minha vida no desenvolvimento.",
 
         // introduction or about me
         intro: Intro, // file path of the introduction
 
         socials: {
-            email: "286547316@qq.com",
-            github: "https://github.com/imyuanli",
-            twitter: "https://twitter.com",
-            linkedin: "",
-            facebook: "",
-            instagram: "",
-            youtube: "",
+            email: "soutogabriel04@gmail.com",
+            github: "https://github.com/gabesouto",
+            linkedin: "https://www.linkedin.com/in/gabrielsouto-developer/",
+      
         },
     },
 
@@ -107,8 +105,8 @@ const siteData: any = {
 
     // project page config
     project: {
-        title: "Look what I've done",
-        description: "Some small tools made by oneself",
+        title: "Projetos",
+        description: "Projetos construídos com: Java, Node.js, React.js",
 
         // status color and text
         getStatus: (status: string) => {
@@ -152,43 +150,44 @@ const siteData: any = {
         // you can add more fields according to your needs ,but you need to modify the code in the project/page.tsx file
         projects: [
             {
-                name: "NextBlog",
-                description: "A minimalist blog created with Next.js ,Shadcn-ui and Tailwind.css",
-                href: "https://next-blog.imyuanli.cn",
-                github: "imyuanli/next-blog",
-                status: "active",
+                name: "TODOs com QUALIDADE",
+                description: "um simples TODO list com foco em qualidade e organização do código.",
+                href: "https://github.com/gabesouto/todos-com-qualidade",
+                github: "https://github.com/gabesouto/todos-com-qualidade",
             },
             {
-                name: "AllDone",
-                description: "One stop project management platform",
-                status: "dev",
+                name: "AGRIX",
+                description: "Agrix é uma API para gerenciamento agrícola que permite aos usuários manipular informações sobre fazendas, cultivos e fertilizantes.",
+                href: "https://github.com/gabesouto/agrix-system",
+                github: "https://github.com/gabesouto/agrix-system",
+
             },
             {
-                name: "Slash Editor",
-                description: "A simple rich text editor",
-                href: "https://slash.imyuanli.cn",
-                github: "imyuanli/slash-editor",
+                name: "MY MANAGER",
+                description: "O Sistema consiste em um API de gerenciamento de clientes e vendas, sendo possível fazer cadastro de usuários, login de usuários com autenticação, cadastro, edição e exclusão de clientes, produtos e vendas",
+                href: "https://github.com/gabesouto/my-manager",
+                github: "https://github.com/gabesouto/my-manager",
             },
             {
-                name: "RMX",
-                description: "Readme 是一个在线编辑器，可以帮助开发人员为他们快速的制作项目的README.md，同时也满足Github个人主页的一些模板",
-                href: "https://readme.imyuanli.cn/",
-                github: "imyuanli/readme",
-                status: "filed",
+                name: "TFC",
+                description: "O TFC é uma aplicação full-stack para gerenciamento de partidas de futebol, sendo possível visualizar, adicionar, deletar e editar as partidas, essas funções são protegidas sendo possível o acesso apenas com autenticação.",
+                href: "https://github.com/gabesouto/Trybe-Football-Club",
+                github: "https://github.com/gabesouto/Trybe-Football-Club",
+
             },
             {
-                name: "简历生成",
-                description: "一款极简的在线简历生成器，存在诸多bug，可能会进行大升级！",
-                href: "https://resume.imyuanli.cn/",
-                github: "imyuanli/resume",
-                status: "offline",
+                name: "MY STORAGE",
+                description: "O My Storage é um sistema de gerenciamento de inventário para lojas com recursos de CRUD, fornecendo uma interface para adicionar, editar e excluir produtos.",
+                href: "https://github.com/gabesouto/my-storage",
+                github: "https://github.com/gabesouto/my-storage",
+
             },
         ],
     },
 
     // search config
     search: {
-        enabled: true,
+        enabled: false,
         engine: "cmdk", //  cmdk | algolia
         // todo algolia search
         // algolia: {
