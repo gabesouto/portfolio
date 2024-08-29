@@ -38,7 +38,7 @@ const siteData: any = {
         {
             name: "Currículo",
             value:
-              "https://drive.google.com/file/d/16KdkrB3akIBXO9YBxZXRv1RouG2-t3cQ/view?usp=drive_link",
+              "https://docs.google.com/document/d/15vLalkcnidYRV7dpsTTjvK5aGkzym5oRiN88HydoGMo/edit?usp=sharing",
           },
         {
             name: 'Projetos',
@@ -49,7 +49,7 @@ const siteData: any = {
     // home page config
     home: {
         title: "Portfólio",
-        description: "Meu nome é Gabriel Dos Santos Souto, sou um desenvolvedor fullstack e acadêmico de Análise e Desenvolvimento de Sistemas, seja bem vindo(a) ao meu blog pessoal, aqui você encontrará todas as informações relacionadas a minha vida no desenvolvimento.",
+        description: "Meu nome é Gabriel Dos Santos Souto, sou um desenvolvedor fullstack atualmente com foco em Java mas com conhecimentos em Javascript, acadêmico de Análise e Desenvolvimento de Sistemas, seja bem vindo(a) ao meu blog pessoal, aqui você encontrará todas as informações relacionadas a minha vida no desenvolvimento.",
 
         // introduction or about me
         intro: Intro, // file path of the introduction
