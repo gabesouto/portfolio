@@ -49,7 +49,7 @@ const siteData: any = {
     // home page config
     home: {
         title: "Portfólio",
-        description: "Meu nome é Gabriel Dos Santos Souto, sou um desenvolvedor fullstack atualmente com foco em Java mas com conhecimentos em Javascript, acadêmico de Análise e Desenvolvimento de Sistemas, seja bem vindo(a) ao meu blog pessoal, aqui você encontrará todas as informações relacionadas a minha vida no desenvolvimento.",
+        description: "Olá! Meu nome é Gabriel Souto, sou um desenvolvedor full-stack apaixonado por tecnologia, com foco em Java e conhecimentos em JavaScript. Estou cursando Análise e Desenvolvimento de Sistemas, sempre buscando aprender e evoluir.  ",
 
         // introduction or about me
         intro: Intro, // file path of the introduction
@@ -120,15 +120,15 @@ const siteData: any = {
             if (!status) return {}
 
             switch (status) {
-                case "active":
+                case "Java":
                     return {
-                        variant: "default",
-                        text: "ACTIVE",
+                        variant: "java",
+                        text: "Java",
                     }
-                case "dev":
+                case "JS":
                     return {
-                        variant: "secondary",
-                        text: "DEV",
+                        variant: "javascript",
+                        text: "Javascript",
                     }
                 case "filed":
                     return {
@@ -154,12 +154,14 @@ const siteData: any = {
                 description: "um simples TODO list com foco em qualidade e organização do código.",
                 href: "https://github.com/gabesouto/todos-com-qualidade",
                 github: "https://github.com/gabesouto/todos-com-qualidade",
+                status: "JS"
             },
             {
                 name: "AGRIX",
                 description: "Agrix é uma API para gerenciamento agrícola que permite aos usuários manipular informações sobre fazendas, cultivos e fertilizantes.",
                 href: "https://github.com/gabesouto/agrix-system",
                 github: "https://github.com/gabesouto/agrix-system",
+                status: "Java"
 
             },
             {
@@ -167,12 +169,14 @@ const siteData: any = {
                 description: "O Sistema consiste em um API de gerenciamento de clientes e vendas, sendo possível fazer cadastro de usuários, login de usuários com autenticação, cadastro, edição e exclusão de clientes, produtos e vendas",
                 href: "https://github.com/gabesouto/my-manager",
                 github: "https://github.com/gabesouto/my-manager",
+                 status: "JS"
             },
             {
                 name: "TFC",
                 description: "O TFC é uma aplicação full-stack para gerenciamento de partidas de futebol, sendo possível visualizar, adicionar, deletar e editar as partidas, essas funções são protegidas sendo possível o acesso apenas com autenticação.",
                 href: "https://github.com/gabesouto/Trybe-Football-Club",
                 github: "https://github.com/gabesouto/Trybe-Football-Club",
+                status: "JS"
 
             },
             {
@@ -180,6 +184,7 @@ const siteData: any = {
                 description: "O My Storage é um sistema de gerenciamento de inventário para lojas com recursos de CRUD, fornecendo uma interface para adicionar, editar e excluir produtos.",
                 href: "https://github.com/gabesouto/my-storage",
                 github: "https://github.com/gabesouto/my-storage",
+                status: "JS"
 
             },
         ],

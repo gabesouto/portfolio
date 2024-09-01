@@ -15,14 +15,18 @@ const badgeVariants = cva(
         destructive:
           "border-transparent bg-destructive text-destructive-foreground hover:bg-destructive/80",
         outline: "text-foreground",
+        javascript:
+          "border-transparent text-black bg-yellow-400", // JavaScript colors
+        java:
+          "border-transparent text-white bg-red-500", // Java colors
+        csharp:
+          "border-transparent bg-purple-600 text-white hover:bg-purple-500", // C# colors
       },
     },
     defaultVariants: {
       variant: "default",
     },
-  }
-)
-
+  },)
 export interface BadgeProps
   extends React.HTMLAttributes<HTMLDivElement>,
     VariantProps<typeof badgeVariants> {}
